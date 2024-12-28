@@ -25,9 +25,13 @@ public class AuthenticationService {
 
     public AuthenticationResponse register(RegisterRequest request) {
         Users user = Users.builder()
-                .login(request.getFirstName())
-                .password(request.getLastName())
+                .login(request.getLogin())
+                .password(request.getPassword())
                 .email(request.getEmail())
+                .weight(request.getWeight())
+                .height(request.getHeight())
+                .gender(request.getGender())
+                .purpose(request.getPurpose())
                 .role(Role.USER)
                 .build();
         repository.save(user);

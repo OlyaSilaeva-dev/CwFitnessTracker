@@ -23,12 +23,12 @@ class NavHeader extends React.Component {
             <header>
                 <Navbar expand = "lg" className="bg-light">
                     <Container className="align-items-center justify-content-center">
-                        <Navbar.Brand href="/hello-page">Мед Часть</Navbar.Brand>
+                        <Navbar.Brand href="/hello-page">Фитнес трекер</Navbar.Brand>
                         <Navbar.Toggle aria-controls="navbar-nav"/>
                         <Navbar.Collapse className="justify-content-end" id = "navbar-nav">
                             <Nav id="nav-list" >
-                                <NavLink className="me-lg-3" href="/booking/book">Записаться</NavLink>
-                                <NavLink className="me-lg-3" href="/booking/relevant">Записи</NavLink>
+                                <NavLink className="me-lg-3" href="/booking/book">Добавить продукт</NavLink>
+                                <NavLink className="me-lg-3" href="/booking/relevant">Добавить тренировку</NavLink>
                                 <NavLink className="me-lg-3" href="/booking/archived">Архив</NavLink>
                                 <NavDropdown  title="Профиль" className="d-flex flex-column me-lg-3 text-center center-text" id ="nav-dropdown">
                                     <NavDropdown.Item href="/">Профиль</NavDropdown.Item>

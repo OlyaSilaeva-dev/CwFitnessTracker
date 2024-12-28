@@ -45,7 +45,8 @@ public class Users implements UserDetails {
     @Column(name = "height")
     private Double height;
 
-    @NotNull
+
+    @Enumerated(EnumType.STRING)
     @Column(name = "gender")
     private Gender gender;
 
